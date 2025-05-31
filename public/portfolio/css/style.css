@@ -1,0 +1,252 @@
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+.nav-item {
+    font-family: 'Nunito', sans-serif;
+}
+
+.lead1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+}
+
+.topblack {
+    background-color:#14141F;
+    padding-top: 21px;
+}
+
+#certifications .certitle {
+    
+     
+    
+     font-family: 'Nunito', sans-serif !important;
+    font-size: 30px;
+}
+
+#certifications .certtitlemain {
+    
+     
+    
+     font-family: 'Nunito', sans-serif;
+    font-size: 40px !important;
+}
+
+#certifications .card {
+    
+     
+    min-height: 1000px;
+    
+}
+
+#certifications .provider {
+    
+     
+ 
+    color: #86B817 !important;
+}
+
+#certifications p {
+      font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+}
+
+.lead2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+}
+
+.main1 {
+    font-weight: 800 !important;
+}
+
+h1.logo1 {
+    padding-top: 5px;
+}
+
+a {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+a {
+}
+
+p.link2 {
+     //font-family: 'Heebo', sans-serif !important;
+     //font-size: 24px !important;
+     //color: #86B817 !important;
+}
+
+
+a.link2:link {
+     font-family: 'Heebo', sans-serif !important;
+     //font-size: 24px !important;
+     color: #86B817 !important;
+}
+
+a.link2:visited {
+       font-family: 'Heebo', sans-serif !important;
+     //font-size: 24px !important;
+     color: #86B817 !important;
+}
+
+a.link2:focus {
+      font-family: 'Heebo', sans-serif !important;
+     //font-size: 24px !important;
+     color: #86B817 !important;
+}
+
+a.link2:hover {
+      font-family: 'Heebo', sans-serif !important;
+     //font-size: 24px !important;
+     color: #86B817 !important;
+}
+
+a.link2:active {
+      font-family: 'Heebo', sans-serif !important;
+     //font-size: 24px !important;
+     color: #86B817 !important;
+}
+
+
+.logo1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700 !important;
+    color: #86B817 !important;
+}
+
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn-primary {
+    background-color: #86B817 !important;
+    border-color: #86B817 !important;
+}
+
+.footerlink1 {
+    color: white;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*** Navbar ***/
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin-right: 25px;
+    padding: 35px 0;
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    transition: 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+/*** Hero Header ***/
+.hero-header {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(rgba(20, 20, 31, 0.6), rgba(20, 20, 31, 0.6)), url(../../assets/bg-hero2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.label1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #86B817 !important;
+}
+
+.label2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.desc-item {
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+/* Extra Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .label1 {
+
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    h1.logo1 {
+    padding-top: 8px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+     .label1 {
+
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
