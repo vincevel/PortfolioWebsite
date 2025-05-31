@@ -1,4 +1,5 @@
 /node_modules
+/database/migrations
 /public/hot
 /public/storage
 /storage/*.key
@@ -23,6 +24,7 @@ storage/*.key
 Homestead.json
 .phpunit.result.cache
 *.log
+error_log
 
 # IDE and editor-specific files
 .idea/

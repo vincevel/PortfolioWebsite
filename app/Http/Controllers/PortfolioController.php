@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Visit_log;
+ 
+
 
 class PortfolioController extends Controller
 {
@@ -37,9 +40,10 @@ class PortfolioController extends Controller
         
         // Prepare the log entry
         $logEntry = "[$timestamp] IP: $ipAddress visited $page\n";
- 
-        //DB::insert('INSERT INTO visit_log (log) VALUES (?)', [$logEntry]);
-      
+
+        $log = new Visit_Log;
+        $log->log = $logEntry;
+        $log->save();
  
         return view('portfolio.portfolio');
     }
