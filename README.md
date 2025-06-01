@@ -1,78 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Portfolio Website
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Overview
+This is a personal portfolio website showcasing my projects, skills, and achievements. The website serves as a professional online presence to highlight my work and connect with potential clients or employers.
 
-## About Laravel
+## Problem Solved
+The goal was to create a centralized platform to display my portfolio, making it easy for visitors to explore my work, skills, and contact information in a visually appealing and accessible way.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
+- Showcase projects with descriptions and visuals.
+- Display skills, experience, and achievements.
+- Responsive design for seamless viewing on all devices.
+- Contact form for inquiries.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technologies Used
+- **PHP**: Backend logic for dynamic content and server-side processing.
+- **MySQL**: Database for storing portfolio data, such as project details or contact form submissions.
+- **CSS**: Styling for a modern, responsive, and visually appealing interface.
+- **JavaScript**: Interactive frontend elements for enhanced user experience.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Installation
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd your-repo-name
+   ```
+3. **Set Up the Database**:
+   - Create a MySQL database (e AZURE
+e.g., `portfolio_db`).
+   - No schema is provided; you may need to create tables manually for storing project details or contact form submissions. Example table structure:
+     ```sql
+     CREATE TABLE projects (
+         id INT AUTO_INCREMENT PRIMARY KEY,
+         title VARCHAR(255),
+         description TEXT,
+         image_url VARCHAR(255),
+         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     );
+     ```
+   - Import the table structure into your MySQL database:
+     ```bash
+     mysql -u your-username -p portfolio_db < your-schema.sql
+     ```
+4. **Configure Environment**:
+   - Copy the `.env.example` file to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Update `.env` with your database credentials and other configurations:
+     ```env
+     DB_HOST=localhost
+     DB_NAME=portfolio_db
+     DB_USER=your-username
+     DB_PASS=your-password
+     ```
+5. **Install Dependencies**:
+   - Ensure PHP and Composer are installed.
+   - Run the following to install PHP dependencies (if any):
+     ```bash
+     composer install
+     ```
+6. **Set Up Web Server**:
+   - Configure your web server (e.g., Apache or Nginx) to point to the `public/` directory.
+   - For example, in Apache, set the `DocumentRoot` to `/path/to/your-repo-name/public`.
+7. **Run the Application**:
+   - Start your web server and access the app via `http://localhost` or your configured domain.
+   - Optionally, use PHP's built-in server for development:
+     ```bash
+     php -S localhost:8000 -t public
+     ```
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+## Usage
+- Access the website via a browser to view the portfolio.
+- Use the contact form to receive inquiries.
+- Customize content by updating the database or PHP templates.
 
 ## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contributions are welcome! Please submit a pull request or open an issue to discuss improvements or bugs.
 
 ## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
