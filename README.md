@@ -21,11 +21,11 @@ The goal was to create a centralized platform to display my portfolio, making it
 ## Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/vincevel/PortfolioWebsite.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd your-repo-name
+   cd PortfolioWebsite
    ```
 3. **Set Up the Database**:
    - Create a MySQL database (e AZURE
